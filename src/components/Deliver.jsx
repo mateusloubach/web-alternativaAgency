@@ -5,51 +5,49 @@ import List, { ListItem } from "./List";
 
 const Deliver = () => {
   return (
-    <Section title="Deliver" image={{ src: imageMeet, shape: 1 }}>
+    <Section title="Entrega" image={{ src: imageMeet, shape: 1 }}>
       <div className="space-y-6 text-base text-neutral-600">
         <p>
-          About halfway through the Build phase, we push each project out by 6
-          weeks due to a change in{" "}
-          <strong className="font-semibold text-neutral-950">
-            requirements
-          </strong>
-          . This allows us to increase the budget a final time before launch.
+          Com a etapa de construção concluída, testamos todos os 
+          aspectos da solução digital para garantir que ela 
+          atenda aos mais altos padrões de qualidade e funcionalidade.
         </p>
         <p>
-          Despite largely using pre-built components, most of the{" "}
-          <strong className="font-semibold text-neutral-950">progress</strong>{" "}
-          on each project takes place in the final 24 hours. The development
-          time allocated to each client is actually spent making augmented
-          reality demos that go viral on Twitter.
+          Nosso compromisso com a <strong className="font-semibold text-neutral-950"> excelência </strong> 
+          se estende a um processo de implantação contínuo, 
+          Ao longo desta fase, nossa equipe permanece dedicada 
+          à transparência e à comunicação aberta, fornecendo 
+          <strong className="font-semibold text-neutral-950"> insights </strong> 
+          claros sobre o produto final.
         </p>
         <p>
-          We ensure that the main pages of the site are{" "}
-          <strong className="font-semibold text-neutral-950">
-            fully functional
-          </strong>{" "}
-          at launch — the auxiliary pages will, of course, be lorem ipusm shells
-          which get updated as part of our exorbitant{" "}
-          <strong className="font-semibold text-neutral-950">
-            maintenance
-          </strong>{" "}
-          retainer.
+          À medida que entregamos sua solução, vamos além do
+          atendimento às expectativas; nós nos esforçamos para superá-los, 
+          garantindo que seu projeto não seja apenas lançado, mas lançado
+          com <strong className="font-semibold text-neutral-950"> precisão</strong>, 
+          <strong className="font-semibold text-neutral-950"> confiabilidade</strong>, 
+          e <strong className="font-semibold text-neutral-950"> potencial </strong>  
+          para causar um impacto duradouro no mundo digital.
         </p>
       </div>
       <h3 className="mt-12 font-display text-base font-semibold text-neutral-950">
-        Included in this phase
+        O que está incluso nesta etapa
       </h3>
+      <br></br>
       <List>
-        <ListItem title="Testing">
-          Our projects always have 100% test coverage, which would be impressive
-          if our tests weren’t as porous as a sieve.
+        <ListItem title="Testes">
+          É o nosso compromisso em fornecer um produto impecável, avaliando 
+          rigorosamente cada componente quanto à funcionalidade, segurança e 
+          experiência do usuário.
         </ListItem>
-        <ListItem title="Infrastructure">
-          To ensure reliability we only use the best Digital Ocean droplets that
-          $4 a month can buy.
+        <ListItem title="Infraestrutura">
+          A base robusta sobre a qual sua solução digital é construída, 
+          garantindo escalabilidade, eficiência e resiliência.
         </ListItem>
-        <ListItem title="Support">
-          Because we hold the API keys for every critical service your business
-          uses, you can expect a lifetime of support, and invoices, from us.
+        <ListItem title="Suporte">
+          Resume nosso compromisso contínuo com o seu sucesso, fornecendo 
+          assistência e manutenção contínuas  para garantir que seu ativo 
+          digital opere com desempenho máximo.
         </ListItem>
       </List>
     </Section>

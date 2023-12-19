@@ -16,10 +16,10 @@ const AboutPage = () => {
         <div className="mt-10 max-w-2xl space-y-6 text-base">
           <p>
             Alimentados por um desejo coletivo de preencher a lacuna entre criatividade e tecnologia, 
-            fundamos a Alternativa com a intenção de trazer soluções personalizadas e impactantes para nossos clientes.
+            fundamos a <strong className="font-semibold text-neutral-950">Alternativa</strong> com a intenção de trazer soluções personalizadas e impactantes para nossos clientes.
           </p>
           <p>
-            Aqui na Alternativa, não criamos apenas software; nós projetamos experiências. 
+            Aqui na <strong className="font-semibold text-neutral-950">Alternativa</strong>, não criamos apenas software; nós projetamos experiências. 
             Nossa equipe apaixonada de desenvolvedores, designers e visionários colabora perfeitamente, 
             reunindo seus diversos talentos para lidar com projetos de todas as escalas. De veteranos experientes 
             a novos talentos, nossa força de trabalho é uma mistura vibrante de experiência e inovação, 
@@ -31,7 +31,7 @@ const AboutPage = () => {
         <StatList>
           <StatListItem value="35" label="Projetos Finalizados" />
           <StatListItem value="71" label="Clientes Satisfeitos" />
-          <StatListItem value="R$25.7M" label="Faturamento de clientes" />
+          <StatListItem value="R$17.5M" label="Faturamento de clientes" />
         </StatList>
       </Container>
       <Cultures />

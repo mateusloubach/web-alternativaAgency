@@ -9,12 +9,12 @@ import {
 } from "react-icons/bs";
 
 export const SocialMediaProfiles = [
-  {
-    title: "Youtube",
-    href: "https://www.youtube.com/",
-    icon: BsYoutube,
-  },
-  { title: "GitHub", href: "https://github.com/mateusloubach", icon: BsGithub },
+  // {
+  //   title: "Youtube",
+  //   href: "https://www.youtube.com/",
+  //   icon: BsYoutube,
+  // },
+  { title: "GitHub", href: "https://github.com/Alternativa-Team", icon: BsGithub },
   {
     title: "Facebook",
     href: "https://www.facebook.com/",
@@ -25,11 +25,11 @@ export const SocialMediaProfiles = [
     href: "https://www.linkedin.com/in/mateusloubach",
     icon: BsLinkedin,
   },
-  {
-    title: "Twitter",
-    href: "https://twitter.com/mcesarloubach",
-    icon: BsTwitter,
-  },
+  // {
+  //   title: "Twitter",
+  //   href: "https://twitter.com/mcesarloubach",
+  //   icon: BsTwitter,
+  // },
 ];
 
 const SocialMedia = ({ className, invert = false }) => {

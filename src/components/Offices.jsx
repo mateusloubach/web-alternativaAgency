@@ -31,7 +31,7 @@ const Offices = ({ invert = false, ...props }) => {
         <Office name="Australia" invert={invert}>
           32-34 Bunn St
           <br />
-          Pyrmont - NSW, 2009
+          Sydney - NSW, 2009
         </Office>
       </li>
     </ul>
