@@ -6,8 +6,8 @@ import PageIntro from "@/components/PageIntro";
 const ContactPage = () => {
   return (
     <>
-      <PageIntro eyebrow="Contato" title="Let’s work together">
-        <p>We can not wait to hear from you.</p>
+      <PageIntro eyebrow="Contato" title="Vamos trabalhar juntos">
+        <p>Mal podemos esperar para ouvir de você.</p>
       </PageIntro>
       <Container className="mt-24 sm:mt-32 lg:mt-40">
         <div className="grid grid-cols-1 gap-x-8 gap-y-24 lg:grid-cols-2">
