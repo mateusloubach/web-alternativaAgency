@@ -1,7 +1,10 @@
+'use client'
+
 import ContactDetails from "@/components/ContactDetails";
 import ContactForm from "@/components/ContactForm";
 import Container from "@/components/Container";
 import PageIntro from "@/components/PageIntro";
+import React, { useState } from "react";
 
 const ContactPage = () => {
   return (
