@@ -29,10 +29,10 @@ const Header = ({
         <Link href={"/"} aria-label="Home">
           <Logo className="font-display" invert={invert}>alternativa</Logo>
         </Link>
-        <div className="flex items-center gap-x-8">
-          <Button href={"/contact"} invert={invert}>
+        <div className="flex items-center gap-x-4">
+          {/* <Button className="p-0 font-light" href={"/contact"} invert={invert}>
             Contato
-          </Button>
+          </Button> */}
           <button
             ref={toggleRef}
             type="button"
@@ -90,7 +90,7 @@ const Navigation = () => {
       </NavigationRow>
       <NavigationRow>
         <NavigationItem href="/process">Nosso Processo</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
+        <NavigationItem href="/contact">Contato</NavigationItem>
       </NavigationRow>
     </nav>
   );
