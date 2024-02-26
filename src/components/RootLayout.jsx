@@ -29,10 +29,7 @@ const Header = ({
         <Link href={"/"} aria-label="Home">
           <Logo className="font-display" invert={invert}>alternativa</Logo>
         </Link>
-        <div className="flex items-center gap-x-8">
-          {/* <Button href={"/contato"} invert={invert}>
-            Contato
-          </Button> */}
+        <div className="flex items-center gap-x-4">
           <button
             ref={toggleRef}
             type="button"
