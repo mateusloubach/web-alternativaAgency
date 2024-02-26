@@ -91,10 +91,10 @@ const ContactForm = () => {
               <legend className="text-base/6 text-neutral-500">Orçamento</legend>
             </fieldset>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8" value={radio} onChange={(e) => setRadio(e.target.value)}>
-              <RadioInput label="R$25K – R$50K" name="budget" value="de R$25k até R$50k" />
-              <RadioInput label="R$50K – R$100K" name="budget" value="de R$50k até R$100k" />
-              <RadioInput label="R$100K – R$150K" name="budget" value="de R$100k até R$150k" />
-              <RadioInput label="Acima de R$150K" name="budget" value="Acima de R$150k" />
+              <RadioInput label="Até R$25K" name="budget" value="Até R$25K" />
+              <RadioInput label="R$25K – R$50K" name="budget" value="de R$50k até R$100K" />
+              <RadioInput label="R$50K – R$100K" name="budget" value="de R$100k até R$100K" />
+              <RadioInput label="Acima de R$100K" name="budget" value="Acima de R$100K" />
             </div>
           </div>
         </div>
