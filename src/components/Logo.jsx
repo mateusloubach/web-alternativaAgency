@@ -18,7 +18,7 @@ const Logo = ({ invert, href, className, children, ...props }) => {
   return (
     <h2
       className={clsx(
-        "cursor-pointer font-light wide duration-300",
+        "cursor-pointer font-regular wide duration-300",
         window.innerWidth > 768 ? "text-5xl" : "text-5xl",
         className,
       )}
