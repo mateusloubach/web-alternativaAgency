@@ -21,10 +21,10 @@ export const navigation = [
   {
     title: "Empresa",
     links: [
-      { title: "Sobre Nós", href: "/about" },
-      { title: "Processos", href: "/process" },
+      { title: "Sobre Nós", href: "/sobre" },
+      { title: "Processos", href: "/processo" },
       { title: "Blog", href: "/blog" },
-      { title: "Contato", href: "/contact" },
+      { title: "Contato", href: "/contato" },
     ],
   },
   {

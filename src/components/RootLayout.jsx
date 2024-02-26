@@ -30,7 +30,7 @@ const Header = ({
           <Logo className="font-display" invert={invert}>alternativa</Logo>
         </Link>
         <div className="flex items-center gap-x-8">
-          {/* <Button href={"/contact"} invert={invert}>
+          {/* <Button href={"/contato"} invert={invert}>
             Contato
           </Button> */}
           <button
