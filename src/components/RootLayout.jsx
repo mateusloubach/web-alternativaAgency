@@ -30,9 +30,9 @@ const Header = ({
           <Logo className="font-display" invert={invert}>alternativa</Logo>
         </Link>
         <div className="flex items-center gap-x-8">
-          <Button href={"/contact"} invert={invert}>
+          {/* <Button href={"/contact"} invert={invert}>
             Contato
-          </Button>
+          </Button> */}
           <button
             ref={toggleRef}
             type="button"
@@ -47,7 +47,7 @@ const Header = ({
           >
             <Icon
               className={clsx(
-                "h-6 w-6",
+                "h-8 w-8", // Increase the size to h-8 w-8
                 invert
                   ? "fill-white group-hover:fill-neutral-200"
                   : "fill-neutral-950 group-hover:fill-neutral-700"
@@ -83,14 +83,14 @@ const NavigationItem = ({ href, children }) => {
 
 const Navigation = () => {
   return (
-    <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
+    <nav className="mt-px font-display text-4xl sm:text-3xl lg:text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work">Nosso Trabalho</NavigationItem>
-        <NavigationItem href="/about">Quem Somos</NavigationItem>
+        <NavigationItem href="/trabalhos">Nosso Trabalho</NavigationItem>
+        <NavigationItem href="/sobre">Quem Somos</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">Nosso Processo</NavigationItem>
-        <NavigationItem href="/blog">Blog</NavigationItem>
+        <NavigationItem href="/processo">Nosso Processo</NavigationItem>
+        <NavigationItem href="/contato">Contato</NavigationItem>
       </NavigationRow>
     </nav>
   );
