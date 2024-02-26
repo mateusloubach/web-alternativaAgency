@@ -85,12 +85,12 @@ const Navigation = () => {
   return (
     <nav className="mt-px font-display text-5xl font-medium tracking-tight text-white">
       <NavigationRow>
-        <NavigationItem href="/work">Nosso Trabalho</NavigationItem>
-        <NavigationItem href="/about">Quem Somos</NavigationItem>
+        <NavigationItem href="/trabalhos">Nosso Trabalho</NavigationItem>
+        <NavigationItem href="/sobre">Quem Somos</NavigationItem>
       </NavigationRow>
       <NavigationRow>
-        <NavigationItem href="/process">Nosso Processo</NavigationItem>
-        <NavigationItem href="/contact">Contato</NavigationItem>
+        <NavigationItem href="/processo">Nosso Processo</NavigationItem>
+        <NavigationItem href="/contato">Contato</NavigationItem>
       </NavigationRow>
     </nav>
   );
