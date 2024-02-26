@@ -30,9 +30,6 @@ const Header = ({
           <Logo className="font-display" invert={invert}>alternativa</Logo>
         </Link>
         <div className="flex items-center gap-x-4">
-          {/* <Button className="p-0 font-light" href={"/contact"} invert={invert}>
-            Contato
-          </Button> */}
           <button
             ref={toggleRef}
             type="button"
