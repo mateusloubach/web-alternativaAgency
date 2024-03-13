@@ -84,25 +84,44 @@ const ContactForm = () => {
             value={empresa}
             onChange={(e) => setEmpresa(e.target.value)}
           />
-          <TextInput label="Tel" type="tel" name="phone" autoComplete="tel" value={tel} onChange={(e) => setTel(e.target.value)}/>
+          <TextInput
+            label="Tel"
+            type="tel"
+            name="phone"
+            autoComplete="tel"
+            value={tel}
+            onChange={(e) => {
+              const formattedTel = e.target.value.replace(/\D/g, "").replace(/^(\d{2})(\d{5})(\d{4}).*/, "($1) $2-$3");
+              setTel(formattedTel);
+              if (formattedTel.length !== 15) {
+                
+              } else {
+
+              }
+            }}
+          />
           <TextInput label="Mensagem" name="message" value={message} onChange={(e) => setMessage(e.target.value)}/>
           <div className="border border-neutral-300 px-6 py-8 first:rounded-t-2xl last:rounded-b-2xl">
             <fieldset>
               <legend className="text-base/6 text-neutral-500">Orçamento</legend>
             </fieldset>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8" value={radio} onChange={(e) => setRadio(e.target.value)}>
-              <RadioInput label="Até R$25K" name="budget" value="Até R$25K" />
-              <RadioInput label="R$25K – R$50K" name="budget" value="de R$50k até R$100K" />
-              <RadioInput label="R$50K – R$100K" name="budget" value="de R$100k até R$100K" />
-              <RadioInput label="Acima de R$100K" name="budget" value="Acima de R$100K" />
+              <RadioInput label="Até R$5K" name="budget" value="Até R$5K" />
+              <RadioInput label="R$5K – R$25K" name="budget" value="de R$5k até R$25K" />
+              <RadioInput label="R$25K – R$50K" name="budget" value="de R$25k até R$50K" />
+              <RadioInput label="Acima de R$50K" name="budget" value="Acima de R$50K" />
             </div>
           </div>
         </div>
 
         {isSubmitted ? (
-          <div className="text-green-500 m-3">Mensagem enviada com sucesso!</div>
+          <h2 className="text-green-600 ml-3 mt-4">Mensagem enviada com sucesso!</h2>
         ) : (
-          <Button type="submit" disabled={isSubmitDisabled} className={`mt-3 ${isSubmitDisabled ? 'bg-gray-400' : 'bg-black'}`}>
+          <Button
+            type="submit"
+            disabled={isSubmitDisabled || tel.length !== 15}
+            className={`mt-3 font-light ${isSubmitDisabled || tel.length !== 15 ? 'bg-gray-300 hover:bg-gray-300' : 'bg-black hover:bg-black'}`}
+          >
             Vamos trabalhar juntos
           </Button>
         )}
