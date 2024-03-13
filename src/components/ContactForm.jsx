@@ -91,10 +91,10 @@ const ContactForm = () => {
               <legend className="text-base/6 text-neutral-500">Orçamento</legend>
             </fieldset>
             <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 gap-8" value={radio} onChange={(e) => setRadio(e.target.value)}>
-              <RadioInput label="Até R$25K" name="budget" value="Até R$25K" />
-              <RadioInput label="R$25K – R$50K" name="budget" value="de R$50k até R$100K" />
-              <RadioInput label="R$50K – R$100K" name="budget" value="de R$100k até R$100K" />
-              <RadioInput label="Acima de R$100K" name="budget" value="Acima de R$100K" />
+              <RadioInput label="Até R$5K" name="budget" value="Até R$5K" />
+              <RadioInput label="R$5K – R$25K" name="budget" value="de R$5k até R$25K" />
+              <RadioInput label="R$25K – R$50K" name="budget" value="de R$25k até R$50K" />
+              <RadioInput label="Acima de R$50K" name="budget" value="Acima de R$50K" />
             </div>
           </div>
         </div>
@@ -102,7 +102,7 @@ const ContactForm = () => {
         {isSubmitted ? (
           <div className="text-green-500 m-3">Mensagem enviada com sucesso!</div>
         ) : (
-          <Button type="submit" disabled={isSubmitDisabled} className={`mt-3 ${isSubmitDisabled ? 'bg-gray-400' : 'bg-black'}`}>
+          <Button type="submit" disabled={isSubmitDisabled} className={`mt-3 font-light ${isSubmitDisabled ? 'bg-gray-400' : 'bg-black'}`}>
             Vamos trabalhar juntos
           </Button>
         )}
